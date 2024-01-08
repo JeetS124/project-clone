@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section-1 {
+    position: sticky;
+    background: url('../img/bg.jpg');
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    transition: all;
+}
+
+header {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 500ms;
+}
+
+nav {
+    margin-right: 70px;
+}
+
+nav a {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #eee;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    padding: 10px 1px;
+    transition: 500ms;
+}
+
+.active {
+    border-color: #00b3ff;
+}
+
+nav a:hover {
+    border-color: #00b3ff;
+}
+
+.logo {
+    flex: 1;
+    font-size: 35px;
+    font-family: sans-serif;
+    margin-left: 70px;
+    color: #fff;
+}
+
+.logo img {
+    width: 150px;
+    height: 40px;
+    transition: 200ms;
+}
+
+.bgc {
+    background: #eee;
+    padding: 10px;
+    transition: 500ms;
+}
+
+.bgc .logo {
+    font-size: 25px;
+    color: #000;
+    transition: 200ms;
+}
+
+.bgc .logo img {
+    width: 120px;
+    height: 40px;
+    transition: 200ms;
+}
+
+.bgc nav a {
+    font-size: 12px;
+    color: #222;
+}
+
+.section-2 {
+    padding: 20px;
+    padding-left: 60px;
+}
+
+.section-2 h1 {
+    padding: 20px;
+    font-size: 40px;
+}
+
+.section-2 p {
+    padding: 20px;
+    line-height: 1.8em;
+    font-size: 18px;
+}
+
+@media (max-width: 769px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav {
+        padding: 15px;
+        margin: 0px;
+    }
+}
